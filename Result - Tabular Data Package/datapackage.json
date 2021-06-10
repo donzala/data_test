@@ -1,0 +1,81 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "yearly",
+      "path": "yearly_average_prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Price",
+            "type": "number",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "monthly",
+      "path": "monthly_average_prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "Price",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "daily",
+      "path": "daily_prices_populated.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "Price",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "weekly",
+      "path": "weekly_average_prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "date",
+            "format": "default"
+          },
+          {
+            "name": "Price",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ]
+}
